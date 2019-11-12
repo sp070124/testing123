@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+
+body, html{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #283048;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Yeon Sung', cursive !important; 
+}
+
+.text-center button{
+    font-size: 2rem !important;
+    width: 10rem;
+}
+.big-text{
+    font-size: 3rem;
+}
+#game-brand{
+    height: 4.5rem ;
+    width: 6rem;
+}
+.nav-margin{
+    margin-right: 5rem;
+}
+#user-score{
+    padding-top: 2rem;
+} 
+.user-box{  
+    height: 8rem;
+    border: 5px solid #283048;
+    margin-top:1rem;
+}
+#comp-score{
+    padding-top: 2rem;
+}
+.margin-top{
+    margin-top: 2rem;
+}
+.img-border{
+    border: 10px solid #859398;
+    border-radius: 50%;
+}
+.img-border img:hover{
+    border: 10px solid azure;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.img-border img:active{
+    border: 10px solid rgb(80, 11, 11) !important;
+}
+@media(max-width: 1180px){
+    img{
+        max-width: 15rem;
+    }
+}
+@media(max-width: 992px){
+    img{
+        max-width: 13rem;
+    }
+}
+
+@media(max-width: 768px){
+    img{
+        max-width: 10rem;
+    }
+}
+@media(max-width: 576px){
+    img{
+        max-width: 7rem;
+    }
+}
+
