@@ -66,3 +66,11 @@ font-family: 'Yeon Sung', cursive !important;
 .w-70{
     width: 66%;
 }
+@media(max-width: 768px){
+    .card-wrap{
+        width: 28rem;
+        height: auto;
+        flex-wrap: wrap;
+        margin: 5rem auto;
+    }
+}

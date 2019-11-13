@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Liu Jian Mao Cao', cursive !important;
+    color: #222;
+}
+.bg-image {
+    position: absolute;
+    background-image: url('https://www.asiaretailcompany.com/wp-content/uploads/2019/04/p1-hero-banner.jpg');
+    background-attachment: scroll;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(85%);
+}
+.nav-link{
+    font-size: 1rem;
+   margin: 0 15px;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+.nav-link:hover{
+    color: red !important;
+}
+.active a{
+    color: red !important;
+}
+.left-md{
+  position: absolute;
+  top: 35%;
+  left: 8rem;
+  color: white;
+}
+.display-4{
+    font-weight: 600 !important;
+}
+.lead{
+    font-weight: 500 !important;
+}
+.red{
+    border-top: .5rem solid red;
+    max-width: 3rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+.full-page{
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.padding{
+    margin: 1rem !important;
+    padding: 1rem;
+}
+.v-center{  
+   padding-top: 10% !important;
+}
+.sm-video{
+    width: 90% !important;
+    height: auto;
+}
+.pls-0-padding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.margin-bottom{
+    margin-bottom: 4rem;
+}
+.try-v-mid{
+   padding-top: 25%;
+}
+.h-left-bg{
+    background-image: url(https://www.asiaretailcompany.com/wp-content/uploads/2019/04/p1-s1.jpg);
+    height: 100%;
+    width: 100%;
+    background-attachment: scroll;
+    position: absolute;
+    background-position: center;
+    margin-left: -15px !important;
+    min-height: 22rem;
+}
+.left-no-margin{
+    margin-left: px;
+}
+.left-wrap{
+    max-width: 45%;
+    margin-bottom: 2rem;
+}
+.right-wrap{
+    max-width: 45%;
+    margin-bottom: 2rem;
+}
+.property-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bold-text{
+    font-weight: 700 !important;
+}
+.left-wrap-sub{
+    max-width: 18% !important;
+}
+.right-wrap-sub{
+    max-width: 78% !important;
+}
+.col-lg-6 .property-v-mid{
+    padding-top: 35%;
+}
+.col-lg-6 .property-v-mid2{
+    padding-top: 45%;
+}
+#sm-img{
+    max-width: 90%;
+}
+.r-bg{
+    background-image: url(https://www.asiaretailcompany.com/wp-content/uploads/2019/04/p1-s2.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    height: 100%;
+    width: 100%;
+    min-height: 24rem;
+    position: absolute;
+}
+
+@media(max-width: 992px){
+    .v-center{  
+        transform: translateY(-15%);
+     }
+     #sm-img{
+         max-width: 70% ;
+     }
+     .left-md{
+        margin-left: -2rem;
+        margin-top: -4rem;
+    }
+}
+
+@media(max-width: 768px){
+    .property-wrap{
+        margin-top: 15%;
+    }
+    .left-md{
+        margin-left: -2rem;
+        margin-top: -4rem;
+    }
+}
+@media(max-width: 576px){
+    .v-center{  
+        padding-top: 40% !important;
+     }
+     .left-md .display-4{
+        font-size: 2rem;
+     }
+     .left-md .lead{
+        font-size: 1rem;
+     }
+     .left-md{
+         margin-left: -4rem;
+         margin-top: -2rem;
+     }
+     .property-wrap{
+        font-size: 80%;
+    }
+}
