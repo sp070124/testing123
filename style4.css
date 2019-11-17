@@ -1,168 +1,563 @@
-@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
-html, body{
-    height: 100%;
-    width: 100%;
-    font-family: 'Liu Jian Mao Cao', cursive !important;
-    color: #222;
-}
-.bg-image {
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+
+body,
+html{
     position: absolute;
-    background-image: url('https://www.asiaretailcompany.com/wp-content/uploads/2019/04/p1-hero-banner.jpg');
-    background-attachment: scroll;
     height: 100%;
     width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo Bhai', cursive !important; 
+    color: #505962;
+    overflow-x: hidden;
+    background-image: url(img/body-bg.jpg);
     background-position: center;
     background-size: cover;
-    filter: brightness(85%);
+}   
+.page-shadow{
+    box-shadow: 1.5px 3px 7px 3px red !important;
 }
-.nav-link{
+#home {
+    height: 100%;
+    width: 100%;
+}
+.narrow{
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+/*        navbar         */
+#icon{
+    max-height: 2.5rem;
+    margin-left: 2rem;
+}
+#bg-red{
+    background-color:	#B22222 !important;
+    filter: opacity(90%);
+    transform: translateX(-8px);
+}
+.navbar {
+    position: absolute !important;
+    transform: translateX(0.2px) !important;
+    text-transform: uppercase;
+    font-weight: 700;
     font-size: 1rem;
-   margin: 0 15px;
-   font-weight: 500;
-   text-transform: uppercase;
+    letter-spacing: .15rem;
+    margin: 0 auto;
+    padding: 0;
 }
-.nav-link:hover{
-    color: red !important;
+.navbar-nav li {
+    padding-right: .8rem;
 }
-.active a{
-    color: red !important;
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    padding-top: .8rem;
 }
-.left-md{
-  position: absolute;
-  top: 35%;
-  left: 8rem;
-  color: white;
+.navbar-dark .navbar-nav .nav-link:active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: black;
 }
-.display-4{
-    font-weight: 600 !important;
+
+/*   landing    */
+.landing{
+    position: relative;
+    height: 100vh;
 }
-.lead{
-    font-weight: 500 !important;
+.home-inner {
+    background-image: url(img/liv_background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+}
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+.caption h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .2rem .2rem .9rem black;
+    padding: 1rem;
+}
+.caption h3 {
+    font-size: 2.3rem;
+    text-shadow: .15rem .15rem .7rem black;
+    padding-bottom: 1.6rem;
+}
+.btn-lg {
+    border-width: thick;
+    border-radius: 5px;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+.btn-red{
+    background-color: brown !important;
+    filter: opacity(90%);
+}
+/*    Match    */
+#match{
+    background-image: url(img/match-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+}
+.match-box {
+    position: relative;
+    border: 1px solid white;
+    height: 20rem;
+    background-color: rgba(39, 2, 2, 40%);
+    color: white;
+    max-width: 40rem;
+    transform: translateY(4.6rem) !important;
+}
+.home-icon,
+.away-icon{
+    max-height: 6.5rem !important;
+    padding-top: auto;
+}
+.score-board{
+    width: 7rem;
+    font-size: xxx-large;
+    margin-top: 1.3rem;
+}
+.pm-icon{
+    max-height: 2rem;
+}
+.match-btn {
+    width: 6rem;
+}
+/*      team      */
+#team .jumbotron{
+    padding-left: 6rem !important;
+}
+.squad{
+    position: relative;
+    height: 40rem;
+}
+.squad-bg{
+    background-image: url(img/liv_squad.jpeg);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.player{
+    margin: 0.5rem 1rem;
+    vertical-align: top;
+}
+.player-icon{
+    width: 8rem;
+    height: 5rem;
+}
+.player-no{
+    max-width: 8rem;
+    color: white;
+    background-color: saddlebrown;
+    line-height: 100%;
+}
+.player-name{
+    max-width: 8rem;
+    margin-top: -.5rem;
 }
 .red{
     border-top: .5rem solid red;
-    max-width: 3rem;
+    width: 12rem;
     margin-left: 0;
-    margin-bottom: 2rem;
+    margin-top: -.2rem;
 }
-.full-page{
-    height: 100%;
-    width: 100%;
-    padding: 0 !important;
-    margin: 0 !important;
+/*     anfield    */
+#anfield,
+.this-is-anfield{
+    height: 35rem;
 }
-.padding{
-    margin: 1rem !important;
-    padding: 1rem;
+#team .jumbotron {
+    margin-bottom: 0 !important;
 }
-.v-center{  
-   padding-top: 10% !important;
-}
-.sm-video{
-    width: 90% !important;
-    height: auto;
-}
-.pls-0-padding{
-    padding: 0 !important;
-    margin: 0 !important;
-}
-.margin-bottom{
-    margin-bottom: 4rem;
-}
-.try-v-mid{
-   padding-top: 25%;
-}
-.h-left-bg{
-    background-image: url(https://www.asiaretailcompany.com/wp-content/uploads/2019/04/p1-s1.jpg);
-    height: 100%;
-    width: 100%;
-    background-attachment: scroll;
-    position: absolute;
+#anfield-bg{
+    background-image: url(img/anfield-bg.jpg);
     background-position: center;
-    margin-left: -15px !important;
-    min-height: 22rem;
-}
-.left-no-margin{
-    margin-left: px;
-}
-.left-wrap{
-    max-width: 45%;
-    margin-bottom: 2rem;
-}
-.right-wrap{
-    max-width: 45%;
-    margin-bottom: 2rem;
-}
-.property-wrap{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.bold-text{
-    font-weight: 700 !important;
-}
-.left-wrap-sub{
-    max-width: 18% !important;
-}
-.right-wrap-sub{
-    max-width: 78% !important;
-}
-.col-lg-6 .property-v-mid{
-    padding-top: 35%;
-}
-.col-lg-6 .property-v-mid2{
-    padding-top: 45%;
-}
-#sm-img{
-    max-width: 90%;
-}
-.r-bg{
-    background-image: url(https://www.asiaretailcompany.com/wp-content/uploads/2019/04/p1-s2.jpg);
-    background-position: center;
-    background-attachment: scroll;
-    height: 100%;
-    width: 100%;
-    min-height: 24rem;
+    background-attachment: fixed;
+    background-size: cover;
     position: absolute;
 }
-
-@media(max-width: 992px){
-    .v-center{  
-        transform: translateY(-15%);
-     }
-     #sm-img{
-         max-width: 70% ;
-     }
-     .left-md{
-        margin-left: -2rem;
-        margin-top: -4rem;
-    }
+.anfield-topic {
+    color: white;
+    margin-top: 4rem;
+    text-shadow: .2rem .2rem .7rem black;
+}
+.white{
+    border-top: 5px solid white;
+    width: 13rem;
+}
+.anfield-info{
+    color: white;
+    margin-top: 1.5rem;
+}
+/*     membership     */
+#membership .jumbotron{
+    padding: 1rem 0;
+    height: 4rem;
+}
+.membership-banner-h{
+    height: 35rem;
+}
+.red-bg-vertical{
+    background: rgba(211, 0, 0, 0.9);
+    height: 35rem;
+    width: 18vw;
+    position: absolute;
+}
+.membership-banner{
+    height: 100%;
+    background-image: url(img/membership_banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.red-bg-horizontal{
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    background: rgba(211, 20, 20, 0.9);
+    margin-top: 29rem;
+}
+.membership-caption {
+    max-width: 40%;
+    position: absolute;
+    top: 8%;
+    padding-left: 4rem;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+.quotation-mark-open{
+    font-size: 2.5rem;
+    vertical-align: top;
+}
+.quotation-mark-close{
+    font-size: 2.5rem;
+    vertical-align: bottom;
+}
+.membership-caption-hr{
+    border-top: 4px solid white;
+    max-width: 7rem;
+    margin-left: 0;
+}
+.membership-title{
+  padding-left: 5rem  !important;
+  padding-right: 5rem  !important;
+   font-size: 2rem;
+   padding-top: 1.2rem  !important;
+   height: 100%;
+}
+.membership-title-height{
+    height: 7rem !important;
+}
+.membership-adult-icon{
+    max-width: 23rem;
+    transform: translateY(-33%) !important;
+}
+.membership-adult-p{
+    max-width: 68%;
+    padding: 2.5rem 0rem 2rem 3rem!important;
+    color: white;
+    transform: translateY(-3%);
+}
+.membership-adult-bg{
+    background-color: red;
+    background-image: url(img/membership_adult_bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 16rem;
+    transform: translateY(0%);
+}
+.membership-junior-Y{
+    transform: translateY(-10%);
+}
+.membership-adult-Y{
+     height: 16rem;
+}
+.membership-junior{
+    transform: translateY(%) !important;
+    height: 10rem;
+}
+.membership-junior-bg{
+    background-color: lightgray;
+    background-image: url(img/membership_junior_bg.png);
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 16rem;
+    transform: translateY(10%);
+}
+.membership-junior-icon{
+    max-width: 23rem;
+    transform: translateY(-16%) !important;
+}
+.membership-junior-p{
+    text-align: end;
+    max-width: 68%;
+    padding: 0rem 3rem 2rem 0rem !important;
+    color: rgb(22, 14, 14);
+    transform: translateY(23%);
+}
+/*     shop      */
+.shop-height{
+    height: 13rem;
+    margin-top: -5rem;
+    padding-top: 4rem;
+}
+/*     contact      */
+.page-end{
+    height: 20rem !important; 
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.socket{
+    width: 100%;
+    border-top: .2rem solid #666b71;
+    padding: 0;
+    margin: 0;
+}
+.ending-margin{
+    margin-top: -1px;
 }
 
-@media(max-width: 768px){
-    .property-wrap{
-        margin-top: 15%;
+/*                                      */
+@media (max-width: 1200px) {
+    .membership-adult-icon{
+        max-width: 20rem;
+        transform: translateY(-27%) !important;
     }
-    .left-md{
-        margin-left: -2rem;
-        margin-top: -4rem;
+    .membership-junior-icon{
+        max-width: 19rem;
+        transform: translateY(-4.5%) !important;
+    }
+    .membership-adult-p{
+        font-size: .95rem;
+        max-width: 65%;
+        padding: 2.5rem 0rem 1rem 1rem!important;
+        transform: translateY(0%);
+    }
+    .membership-junior-p{
+        font-size: .95rem;
+        padding: 0rem 1rem 1rem 0rem !important;
+        transform: translateY(26%);
     }
 }
-@media(max-width: 576px){
-    .v-center{  
-        padding-top: 40% !important;
-     }
-     .left-md .display-4{
-        font-size: 2rem;
-     }
-     .left-md .lead{
+@media (max-width: 992px) {
+    .membership-adult-icon{
+        max-width: 14rem;
+        transform: translateY(-10%) !important;
+
+    }
+    .membership-junior-icon{
+        max-width: 14rem;
+        transform: translateY(18.5%) !important;
+    }
+    .membership-adult-p{
+        font-size: .8rem;
+        max-width: 69%;
+        padding: 2.5rem 0rem 1rem .5rem!important;
+        transform: translateY(0%);
+    }
+    .membership-junior-p{
+        font-size: .8rem;
+        max-width: 69%;
+        padding: 0rem 0.5rem 1rem 0rem !important;
+        transform: translateY(26%);
+    }
+    .membership-junior-bg{
+        height: 16rem;
+    }
+    .membership-caption .display-4 {
+        font-size: 3rem !important;
+
+    }
+    .red-bg-horizontal{
+        width: 100%;
+        height: 9rem;
+        margin-top: 26rem;
+    }
+    .red-bg-vertical{
+        width: 28vw;
+    }
+    .membership-caption .display-4 {
+        padding-top: 1.7rem;
+    }
+    #team .jumbotron{
+        padding-left: 4rem !important;
+    }
+    #shop h3{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .membership-adult-icon{
+        max-width: 14rem;
+        margin-right: -1rem;
+        transform: translateY(-16%) !important;
+    }
+    .membership-junior-icon{
+        max-width: 14rem;
+        margin-left: -1rem;
+        transform: translateY(-4%) !important;
+    }
+    .membership-adult-p{
+        font-size: .8rem;
+        max-width: 62%;
+        padding: 2rem 0rem 1rem 1rem!important;
+        transform: translateY(0%);
+    }
+    .membership-junior-p{
+        font-size: .8rem;
+        max-width: 62%;
+        padding: 0rem 1rem 1rem 0rem !important;
+        transform: translateY(19%);
+    }
+    .membership-caption .display-4 {
+        font-size: 2rem !important;
+
+    }
+    #team .jumbotron{
+        padding-left: 2rem !important;
+    }
+    .membership-title-height{
+        height: 6rem !important;
+    }
+    .membership-banner-h{
+        height: 26rem;
+    }
+    .red-bg-vertical{
+        height: 26rem;
+        width: 22vw;
+    }
+    .red-bg-horizontal{
+        width: 100%;
+        height: 6rem;
+        margin-top: 20rem;
+    }
+    #membership-top-title{
+        height: 5rem !important;
+    }
+    #membership-top-title > h3{
+        font-size: 1.5rem !important;
+        padding-top: .8rem;
+    }
+    #shop h3{
+        font-size: 1.3rem;
+    }
+    #shop .btn-lg{
+        font-size: .9rem;
+    }
+    .anfield-topic {
+        margin-top: 2rem;
+        font-size: 2.5rem !important;
+    }
+    .white{
+        border-top: 2px solid white;
+        width: 8rem;
+        margin-top: 0.2rem;
+    }
+    .anfield-info{
+        margin-top: .7rem;
+        font-size: .9rem !important;
+    }
+    #anfield h3{
+        font-size: 1.6rem !important;
+        margin-bottom: 1rem;
+    }
+    .home-icon,
+    .away-icon{
+        max-height: 4.5rem !important;
+        padding-top: auto;
+    }
+}
+@media (max-width: 576px) {
+    .membership-adult-icon{
+        max-width: 14rem;
+        margin-right: -3rem;
+        transform: translateY(-38%) !important;
+    }
+    .membership-junior-icon{
+        max-width: 14rem;
+        margin-left: -3rem;
+        transform: translateY(-5%) !important;
+    }
+    .membership-adult-p{
+        transform: translateY(-5%);
+    }
+    .membership-junior-p{
+        transform: translateY(17.5%);
+    }
+    .membership-junior-bg{
+        height: 18rem;
+    }
+    .membership-title{
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .membership-caption .display-4 {
+        padding-top: 1.6rem;
+        font-size: 2rem !important;
+    }
+    .membership-caption i {
+        font-size: 2rem !important;
+    }
+    #membership .lead{
         font-size: 1rem;
-     }
-     .left-md{
-         margin-left: -4rem;
-         margin-top: -2rem;
-     }
-     .property-wrap{
-        font-size: 80%;
+    }
+    .membership-caption{
+        max-width: 45vw;
+    }
+    #team .jumbotron{
+        padding-left: 2rem !important;
+    }
+    .membership-title-height{
+        height: 6rem !important;
+    }
+    .red-bg-vertical{
+        width: 24vw;
+    }
+    .red-bg-horizontal{
+        height: 7rem;
+        margin-top: 19rem;
+    }
+    #membership-top-title > h3{
+        font-size: 1.2rem !important;
+    }
+    .anfield-topic {
+        margin-top: 1.5rem;
+        font-size: 2rem !important;
+    }
+    .white{
+        border-top: 1px solid white;
+        width: 6rem;
+    }
+    .anfield-info{
+        margin-top: .2rem;
+        font-size: .83rem !important;
+    }
+    #anfield h3{
+        font-size: 1.4rem !important;
+    }
+    .home-icon,
+    .away-icon{
+        max-height: 3rem !important;
+        padding-top: auto;
     }
 }
