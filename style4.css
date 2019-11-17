@@ -263,8 +263,10 @@ html{
 }
 .membership-adult-icon{
     max-width: 23rem;
-    transform: translateY(-33%) !important;
-}
+    vertical-align: middle;
+    bottom: 0 !important;
+    position: absolute;
+} 
 .membership-adult-p{
     max-width: 68%;
     padding: 2.5rem 0rem 2rem 3rem!important;
@@ -283,13 +285,13 @@ html{
     transform: translateY(0%);
 }
 .membership-junior-Y{
-    transform: translateY(-10%);
+    margin-bottom: 5rem;
+    height: 16rem;
 }
 .membership-adult-Y{
      height: 16rem;
 }
 .membership-junior{
-    transform: translateY(%) !important;
     height: 10rem;
 }
 .membership-junior-bg{
@@ -300,14 +302,18 @@ html{
     position: absolute;
     width: 100%;
     height: 16rem;
-    transform: translateY(10%);
+    margin-top: 0rem;
 }
 .membership-junior-icon{
     max-width: 23rem;
-    transform: translateY(-16%) !important;
+    vertical-align: middle;
+    bottom: 0 !important;
+    position: absolute;
 }
 .membership-junior-p{
-    text-align: end;
+    margin-left: auto;
+    margin-top: -2rem;
+    text-align: right !important;
     max-width: 68%;
     padding: 0rem 3rem 2rem 0rem !important;
     color: rgb(22, 14, 14);
@@ -338,12 +344,10 @@ html{
 /*                                      */
 @media (max-width: 1200px) {
     .membership-adult-icon{
-        max-width: 20rem;
-        transform: translateY(-27%) !important;
+        max-width: 22rem;
     }
     .membership-junior-icon{
-        max-width: 19rem;
-        transform: translateY(-4.5%) !important;
+        max-width: 22rem;
     }
     .membership-adult-p{
         font-size: .95rem;
@@ -359,13 +363,10 @@ html{
 }
 @media (max-width: 992px) {
     .membership-adult-icon{
-        max-width: 14rem;
-        transform: translateY(-10%) !important;
-
+        max-width: 20rem;
     }
     .membership-junior-icon{
-        max-width: 14rem;
-        transform: translateY(18.5%) !important;
+        max-width: 20rem;
     }
     .membership-adult-p{
         font-size: .8rem;
@@ -402,19 +403,16 @@ html{
     }
     #shop h3{
         font-size: 1.5rem;
-        margin-top: 2rem;
+        margin-top: 0rem;
+        margin-bottom: -.5rem;
     }
 }
 @media (max-width: 768px) {
     .membership-adult-icon{
-        max-width: 14rem;
-        margin-right: -1rem;
-        transform: translateY(-16%) !important;
+        max-width: 17rem;
     }
     .membership-junior-icon{
-        max-width: 14rem;
-        margin-left: -1rem;
-        transform: translateY(-4%) !important;
+        max-width: 17rem;
     }
     .membership-adult-p{
         font-size: .8rem;
@@ -427,6 +425,9 @@ html{
         max-width: 62%;
         padding: 0rem 1rem 1rem 0rem !important;
         transform: translateY(19%);
+    }
+    .membership-junior-bg{
+        height: 16rem;
     }
     .membership-caption .display-4 {
         font-size: 2rem !important;
@@ -453,12 +454,10 @@ html{
     #membership-top-title{
         height: 5rem !important;
     }
-    #membership-top-title > h3{
-        font-size: 1.5rem !important;
-        padding-top: .8rem;
-    }
     #shop h3{
         font-size: 1.3rem;
+        padding-top: 0rem !important;
+        margin-bottom: .1rem;
     }
     #shop .btn-lg{
         font-size: .9rem;
@@ -488,23 +487,31 @@ html{
 }
 @media (max-width: 576px) {
     .membership-adult-icon{
-        max-width: 14rem;
-        margin-right: -3rem;
-        transform: translateY(-38%) !important;
+        display: none;
     }
     .membership-junior-icon{
-        max-width: 14rem;
-        margin-left: -3rem;
-        transform: translateY(-5%) !important;
+        display: none;
     }
     .membership-adult-p{
-        transform: translateY(-5%);
+        text-align: center;
+        max-width: 100vw;
+        margin-top: -1rem;
+    }
+    .membership-adult-p .btn{
+      font-size: 3vw;
+      margin: 0;
+    }
+    .membership-junior-p .btn{
+      font-size: 3vw;
+      margin-top: -.9rem !important;
     }
     .membership-junior-p{
-        transform: translateY(17.5%);
+        text-align: center !important;
+        max-width: 100vw;
+        margin-top: -2.5rem;
     }
     .membership-junior-bg{
-        height: 18rem;
+        margin-top: -.5rem;
     }
     .membership-title{
         font-size: 1.5rem;
@@ -513,16 +520,17 @@ html{
     }
     .membership-caption .display-4 {
         padding-top: 1.6rem;
-        font-size: 2rem !important;
+        margin-left: -1rem;
+        font-size: 7vw !important;
     }
     .membership-caption i {
-        font-size: 2rem !important;
+        font-size: 7vw !important;
     }
     #membership .lead{
         font-size: 1rem;
     }
     .membership-caption{
-        max-width: 45vw;
+        max-width: 48vw;
     }
     #team .jumbotron{
         padding-left: 2rem !important;
@@ -538,7 +546,16 @@ html{
         margin-top: 19rem;
     }
     #membership-top-title > h3{
-        font-size: 1.2rem !important;
+        font-size: 5vw !important;
+    }
+    .membership-title {
+        font-size: 5vw !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        text-align: center !important;
+    }
+    .membership-title.text-right{
+        text-align: center !important;
     }
     .anfield-topic {
         margin-top: 1.5rem;
@@ -557,7 +574,29 @@ html{
     }
     .home-icon,
     .away-icon{
-        max-height: 3rem !important;
+        max-height: 10vw !important;
         padding-top: auto;
+    }
+    #match h3{
+        font-size: 1.2rem;
+    }
+    .score-board{
+        font-size: 6vw;
+        margin: 1rem -1.8rem !important;
+    }
+    .pm-icon{
+        max-width: 25vw;
+    }
+    #home .caption h1{
+        font-size: 2rem !important;
+    }
+    #home .caption h3{
+        font-size: 1.2rem !important;
+    }
+    #shop{
+        margin-top: -8rem !important;
+    }
+    #home .caption .btn{
+        font-size: 1rem !important;
     }
 }
